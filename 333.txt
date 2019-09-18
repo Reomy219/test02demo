@@ -1,0 +1,98 @@
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo
+$ git init
+Initialized empty Git repository in D:/web-demo/.git/
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test888.html
+        test888.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git add .
+warning: LF will be replaced by CRLF in test888.html.
+The file will have its original line endings in your working directory
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   test888.html
+        new file:   test888.txt
+
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git commit -m "first commit"
+[master (root-commit) acea130] first commit
+ 2 files changed, 114 insertions(+)
+ create mode 100644 test888.html
+ create mode 100644 test888.txt
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git remote add origin git@github.com:Reomy219/test.git
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git remote -v
+origin  git@github.com:Reomy219/test.git (fetch)
+origin  git@github.com:Reomy219/test.git (push)
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.78 KiB | 913.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:Reomy219/test.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ echo "# test" >> README.md
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git commit -m "2 commit"
+[master 7ae7335] 2 commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Reomy219/test.git
+   acea130..7ae7335  master -> master
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$ ^C
+
+asus@DESKTOP-8GIG5CL MINGW64 /d/web-demo (master)
+$
